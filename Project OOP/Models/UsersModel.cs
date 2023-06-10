@@ -32,5 +32,8 @@
         [Required]
         public String Phone { get; set; }
 
+        [Required]
+        public bool Admin { get; set; }
+
     }
 }

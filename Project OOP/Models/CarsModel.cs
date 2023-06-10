@@ -33,18 +33,18 @@ namespace Project_OOP.Models
         [Required]
         public int Price { get; set; }
 
+        public bool Rent { get; set; }
 
+        public ICollection<ApplicationModel> Application { get; set; }
 
-        //public ICollection<ApplicationsModel> Application { get; set; }
-
-        //public void Update(IDataBaseCars car)
-        //{
-        //    this.Model = car.Model;
-        //    this.Brand = car.Brand;
-        //    this.Year = car.Year;
-        //    this.Color = car.Color;
-        //    this.Damage = car.Damage;
-        //    this.Price = car.Price;
-        //}
+        public void Update(ICars car)
+        {
+            this.Model = car.Model;
+            this.Brand = car.Brand;
+            this.Year = car.Year;
+            this.Color = car.Color;
+            this.Damage = car.Damage;
+            this.Price = car.Price;
+        }
     }
 }

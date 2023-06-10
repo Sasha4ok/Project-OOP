@@ -30,7 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            button1 = new Button();
+            materialButton1 = new MaterialSkin.Controls.MaterialButton();
             materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
             materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
             materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
@@ -59,7 +59,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(button1);
+            tabPage1.Controls.Add(materialButton1);
             tabPage1.Controls.Add(materialTextBox6);
             tabPage1.Controls.Add(materialTextBox5);
             tabPage1.Controls.Add(materialTextBox4);
@@ -74,15 +74,24 @@
             tabPage1.Text = "Додання машин";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // materialButton1
             // 
-            button1.BackColor = Color.Green;
-            button1.Location = new Point(436, 272);
-            button1.Name = "button1";
-            button1.Size = new Size(169, 60);
-            button1.TabIndex = 7;
-            button1.Text = "Додати";
-            button1.UseVisualStyleBackColor = false;
+            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton1.Depth = 0;
+            materialButton1.HighEmphasis = true;
+            materialButton1.Icon = null;
+            materialButton1.Location = new Point(445, 282);
+            materialButton1.Margin = new Padding(4, 6, 4, 6);
+            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton1.Name = "materialButton1";
+            materialButton1.NoAccentTextColor = Color.Empty;
+            materialButton1.Size = new Size(83, 36);
+            materialButton1.TabIndex = 6;
+            materialButton1.Text = "Додати";
+            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton1.UseAccentColor = false;
+            materialButton1.UseVisualStyleBackColor = false;
             // 
             // materialTextBox6
             // 
@@ -222,6 +231,7 @@
             Text = "Керування";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -237,6 +247,6 @@
         private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
         private TabPage tabPage2;
         private TabPage tabPage3;
-        private Button button1;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

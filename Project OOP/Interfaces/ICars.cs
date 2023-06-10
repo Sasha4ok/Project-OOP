@@ -4,7 +4,6 @@ namespace Project_OOP.Interfaces
     using System;
     public interface ICars
     {
-        // Variables
         public int Id { get; set; }
         public String Model { get; set; }
         public String Brand { get; set; }
